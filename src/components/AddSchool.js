@@ -18,7 +18,7 @@ const AddSchool = () => {
         formData.append('image', data.image[0]);
 
         try {
-            const response = await axios.post('https://edunify-backend-schools-t2.vercel.app/api/addSchool', formData, {
+            const response = await axios.post('http://localhost:5000/api/addSchool', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

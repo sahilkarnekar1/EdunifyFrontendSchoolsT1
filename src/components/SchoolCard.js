@@ -5,7 +5,7 @@ const SchoolCard = ({ school }) => {
     return (
         <div className="school-card">
             {school.image ? (
-                <img src={`https://edunify-backend-schools-t2.vercel.app/schoolImages/${school.image}`} alt={school.name} />
+                <img src={`http://localhost:5000/schoolImages/${school.image}`} alt={school.name} />
             ) : (
                 <div className="placeholder">
                     <span>{school.name}</span>
