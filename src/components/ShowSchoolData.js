@@ -9,7 +9,7 @@ const ShowSchoolData = () => {
     useEffect(() => {
         const fetchSchools = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/schools');
+                const response = await axios.get('https://edunify-backend-schools-t2.vercel.app/api/schools');
                 setSchools(response.data);
             } catch (error) {
                 console.error("There was an error fetching the school data!", error);
